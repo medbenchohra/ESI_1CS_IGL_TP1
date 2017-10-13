@@ -1,7 +1,7 @@
 public class Main {
 
     public int function () {
-        return 59;
+        return 595;
     }
 
     public static void main(String[] args) {
