@@ -12,6 +12,14 @@ public class VectorHelper {
         }
         return new VectorInfo(min,max);
     }
+
+    public int[] multiplyVector(int[] a){
+        int[] c = null;
+        for (int i=0; i < a.length ; i++){
+            c[i] = 2*a[i];
+        }
+        return c;
+    }
 }
 
 class VectorInfo{
