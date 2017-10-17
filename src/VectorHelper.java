@@ -22,6 +22,7 @@ public class VectorHelper {
     }
 
     /* Mohamed added : */
+
     public static void sortVector(int[] a) {
         int c = 1;
         int tmp;
@@ -39,14 +40,23 @@ public class VectorHelper {
         }
     }
 
+    public static int[] sumVectors(int[] v1,int[] v2) throws SumImpossibleException {
+        if (v1.length != v2.length) throw new SumImpossibleException();
+        int [] sum = new int[v1.length];
+        for (int i = 0; i < v1.length; i++) {
+            sum[i] = v1[i] + v2[i];
+        }
+        return sum;
+    }
+
     /* Helper methods */
 
     public static void displayVector(int[] a) {
-        System.out.print("( " + a[0]);
+        System.out.print("\n( " + a[0]);
         for (int i = 1; i < a.length; i++) {
             System.out.print(" ; " + a[i]);
         }
-        System.out.print(" )");
+        System.out.print(" )\n");
     }
 
 }
