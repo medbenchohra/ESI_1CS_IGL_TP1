@@ -49,6 +49,18 @@ public class VectorHelper {
         return sum;
     }
 
+    public static void reverseVector(int[] a) {
+        int tmp;
+        int i = 0;
+        int j = a.length - 1;
+
+        while (i < j) {
+            tmp = a[i];
+            a[i++] = a[j];
+            a[j--] = tmp;
+        }
+    }
+
     /* Helper methods */
 
     public static void displayVector(int[] a) {
