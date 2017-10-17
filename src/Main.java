@@ -1,17 +1,14 @@
-import java.security.SecureRandom;
 
 public class Main {
 
-    public int function () {
-        return 0;
-    }
-
     public static void main(String[] args) {
-        SecureRandom sr = new SecureRandom();
-        System.out.println("Hello World!");
 
-        while (true) System.out.println(sr.nextInt(5));
+        int[] a = {99,8,5,8,2,654,5,2,1,9};
+        int[] b;
 
+        VectorHelper.displayVector(a);
+        VectorHelper.sortVector(a);
+        VectorHelper.displayVector(a);
 
     }
 
