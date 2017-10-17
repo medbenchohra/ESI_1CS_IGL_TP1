@@ -1,3 +1,5 @@
+import java.security.SecureRandom;
+
 public class Main {
 
     public int function () {
@@ -5,7 +7,12 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        SecureRandom sr = new SecureRandom();
         System.out.println("Hello World!");
+
+        while (true) System.out.println(sr.nextInt(5));
+
+
     }
 
 }
