@@ -3,6 +3,11 @@
  */
 public class VectorHelper {
 
+    /**
+     * Returns the maximum and minimum values of the inserted vector
+     * @param a the vector from which maximum and minimum values are retrieved
+     * @return a VectorInfo instance which contains the maximum and the minimum values of the parameter
+     */
     public static VectorInfo max_minVector (int[] a){
         int max,min;
         max = min = a[0];
@@ -13,6 +18,10 @@ public class VectorHelper {
         return new VectorInfo(min,max);
     }
 
+    /**
+     * Doubles the values of the inserted vector
+     * @param a the vector to be modified
+     */
     public static void multiplyVector(int[] a){
         for (int i=0; i < a.length ; i++){
             a[i] = 2*a[i];
@@ -21,6 +30,10 @@ public class VectorHelper {
 
     /* Mohamed added : */
 
+    /**
+     * Sorts the inserted vector
+     * @param a the vector to be sorted
+     */
     public static void sortVector(int[] a) {
         int c = 1;
         int tmp;
@@ -38,6 +51,13 @@ public class VectorHelper {
         }
     }
 
+    /**
+     * Adds the values of two vectors and returns the result
+     * @param v1 the first vector
+     * @param v2 the second vector
+     * @return the vector obtained by adding the values of the two inserted vectors
+     * @throws SumImpossibleException If the two vectors doesn't have the same length
+     */
     public static int[] sumVectors(int[] v1,int[] v2) throws SumImpossibleException {
         if (v1.length != v2.length) throw new SumImpossibleException();
         int [] sum = new int[v1.length];
@@ -47,6 +67,10 @@ public class VectorHelper {
         return sum;
     }
 
+    /**
+     * Reverses the inserted vector
+     * @param a the vector to be reversed
+     */
     public static void reverseVector(int[] a) {
         int tmp;
         int i = 0;
@@ -61,6 +85,10 @@ public class VectorHelper {
 
     /* Helper methods */
 
+    /**
+     * Display a vector
+     * @param a the vector to be displayed
+     */
     public static void displayVector(int[] a) {
         System.out.print("\n( " + a[0]);
         for (int i = 1; i < a.length; i++) {
@@ -71,6 +99,9 @@ public class VectorHelper {
 
 }
 
+/**
+ * A class used to save the minimum and maximum values of a vector
+ */
 class VectorInfo{
     public static int min = 0;
     public static int max = 0;
