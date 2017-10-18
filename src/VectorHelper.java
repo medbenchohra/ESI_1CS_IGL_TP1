@@ -3,7 +3,7 @@
  */
 public class VectorHelper {
 
-    public VectorInfo max_minVector (int[] a){
+    public static VectorInfo max_minVector (int[] a){
         int max,min;
         max = min = a[0];
         for (int i=1;i<a.length;i++){
@@ -13,12 +13,10 @@ public class VectorHelper {
         return new VectorInfo(min,max);
     }
 
-    public static int[] multiplyVector(int[] a){
-        int[] c = null;
+    public static void multiplyVector(int[] a){
         for (int i=0; i < a.length ; i++){
-            c[i] = 2*a[i];
+            a[i] = 2*a[i];
         }
-        return c;
     }
 
     /* Mohamed added : */
@@ -80,5 +78,10 @@ class VectorInfo{
     VectorInfo(int min,int max){
         this.min = min;
         this.max = max;
+    }
+
+    @Override
+    public String toString() {
+        return ("\n Min = " + this.min + "\n Max = " + this.max + "\n");
     }
 }
