@@ -115,10 +115,4 @@ class VectorInfo{
     public String toString() {
         return ("\n Min = " + this.min + "\n Max = " + this.max + "\n");
     }
-
-    private void conflictSimulation(int c) {
-        int k = 0;
-        k = 6;
-        System.out.println("yes");
-    }
 }
