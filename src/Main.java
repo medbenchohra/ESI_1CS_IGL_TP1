@@ -7,8 +7,9 @@ public class Main {
         int[] b = {0,1,5,8,2,4,2,1,9};
 
         VectorHelper.displayVector(b);
-        VectorHelper.reverseVector(b);
+        System.out.println(VectorHelper.max_minVector(a).toString());
         VectorHelper.displayVector(b);
+
 
     }
 
