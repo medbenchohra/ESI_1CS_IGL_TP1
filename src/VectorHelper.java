@@ -103,8 +103,8 @@ public class VectorHelper {
  * A class used to save the minimum and maximum values of a vector
  */
 class VectorInfo{
-    public static int min = 0;
-    public static int max = 0;
+    public int min = 0;
+    public int max = 0;
 
     VectorInfo(int min,int max){
         this.min = min;
