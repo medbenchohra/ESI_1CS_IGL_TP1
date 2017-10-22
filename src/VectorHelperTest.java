@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import static org.junit.Assert.*;
 
 /**
- * Created by Antoni on 18/10/2017.
+ * A testing class created by JUnit
  */
 public class VectorHelperTest {
     @org.junit.Test

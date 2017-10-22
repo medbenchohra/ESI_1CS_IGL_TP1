@@ -1,5 +1,5 @@
 /**
- * Created by Antoni on 15/10/2017.
+ * The class that contains all static methods which manipulate vectors
  */
 public class VectorHelper {
 
