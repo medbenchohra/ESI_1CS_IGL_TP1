@@ -115,5 +115,4 @@ class VectorInfo{
     public String toString() {
         return ("\n Min = " + this.min + "\n Max = " + this.max + "\n");
     }
-
 }
