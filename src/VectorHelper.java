@@ -36,7 +36,7 @@ public class VectorHelper {
      */
     public static void sortVector(int[] a) {
         int c = 1;
-        int tmp = 1;
+        int tmp;
 
         while (c != 0) {
             c = 0;
@@ -114,5 +114,9 @@ class VectorInfo{
     @Override
     public String toString() {
         return ("\n Min = " + this.min + "\n Max = " + this.max + "\n");
+    }
+
+    public void conflictSimulation(int c) {
+        System.out.println("yes");
     }
 }
