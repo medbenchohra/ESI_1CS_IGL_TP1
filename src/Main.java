@@ -1,11 +1,15 @@
+
 public class Main {
 
-    public int function () {
-        return 0;
-    }
-
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+
+        int[] a = {99,8,5,8,2,654,5,2,1,9};
+        int[] b = {0,1,5,8,2,4,2,1,9};
+
+        VectorHelper.displayVector(b);
+        VectorHelper.reverseVector(b);
+        VectorHelper.displayVector(b);
+
     }
 
 }
