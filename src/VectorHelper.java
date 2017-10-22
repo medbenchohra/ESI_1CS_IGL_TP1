@@ -36,7 +36,7 @@ public class VectorHelper {
      */
     public static void sortVector(int[] a) {
         int c = 1;
-        int tmp;
+        int tmp = 1;
 
         while (c != 0) {
             c = 0;
